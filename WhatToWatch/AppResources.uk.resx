@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Caution" xml:space="preserve">
+    <value>Увага!</value>
+    <comment>Caution in ExceptionHandler</comment>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Коментувати</value>
+    <comment>Comment in CommentsPage</comment>
+  </data>
+  <data name="CommentsFound" xml:space="preserve">
+    <value>Знайдено коментарів</value>
+    <comment>Comments Found in CommentsPage</comment>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продовжити...</value>
+    <comment>Continue in ExceptionHandler</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Помилка!</value>
+    <comment>Error in ExceptionHandler</comment>
+  </data>
+  <data name="GetRecommendations" xml:space="preserve">
+    <value>Отримати рекомендації</value>
+    <comment>Get Recommendations in CriteriasMenuPage</comment>
+  </data>
+  <data name="LogInToComment" xml:space="preserve">
+    <value>Для додавання коментарів необхідна авторизація</value>
+    <comment>Log In To Comment message in CommentsPage</comment>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Вихід</value>
+    <comment>Log Out in AuthenticationPage</comment>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Повідомлення!</value>
+    <comment>Message in ExceptionHandler</comment>
+  </data>
+  <data name="NoCommentsFound" xml:space="preserve">
+    <value>Коментарів не знайдено</value>
+    <comment>No Comments Found in CommentsPage</comment>
+  </data>
+  <data name="RecommendationCriterias" xml:space="preserve">
+    <value>Критерії рекомендацій</value>
+    <comment>Recommendation criterias in CriteriasMenuPage</comment>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Регістрація</value>
+    <comment>Sign Up in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Користувач</value>
+    <comment>User in AuthenticationPage</comment>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Попередження!</value>
+    <comment>Warning in ExceptionHandler</comment>
+  </data>
+  <data name="Later" xml:space="preserve">
+    <value>Пізніше</value>
+    <comment>Later for ExceptionHandler</comment>
+  </data>
+  <data name="NoFavorites" xml:space="preserve">
+    <value>Ви ще не додали жодного фільму до обраних</value>
+    <comment>No Favorites in FavoriteMoviesPage</comment>
+  </data>
+  <data name="LogInForFavoritesList" xml:space="preserve">
+    <value>Для роботи з обраними фільмами необхідна авторизація</value>
+    <comment>Log In For Favorites List in FavoriteMoviesPage</comment>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Вхід</value>
+    <comment>Log In in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="LoginName" xml:space="preserve">
+    <value>логін</value>
+    <comment>LoginName in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>пароль</value>
+    <comment>Password in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>повторіть пароль</value>
+    <comment>Confirm Passwordin LogInPage and SignUpPage</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>e-mail</value>
+    <comment>Emailin LogInPage and SignUpPage</comment>
+  </data>
+  <data name="NoLoginOrPassword" xml:space="preserve">
+    <value>Ви не ввели логін та/або пароль</value>
+    <comment>No Login Or Password in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="AllFieldsAreRequired" xml:space="preserve">
+    <value>Всі поля є обов'язковими</value>
+    <comment>All Fields Are Required in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="MessageSentToEmail" xml:space="preserve">
+    <value>На вказану пошту було відправлено повідомлення для підтвердження регістрації</value>
+    <comment>Message Sent To Email in LogInPage and SignUpPage</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>Пошук</value>
+    <comment>Search Tab in MainTabbedPage </comment>
+  </data>
+  <data name="RecommendationTab" xml:space="preserve">
+    <value>Реком</value>
+    <comment>Recommendation Tab in MainTabbedPage </comment>
+  </data>
+  <data name="FavoritesTab" xml:space="preserve">
+    <value>Обране</value>
+    <comment>Favorites Tab in MainTabbedPage </comment>
+  </data>
+  <data name="LoginTab" xml:space="preserve">
+    <value>Вхід</value>
+    <comment>Login Tab in MainTabbedPage </comment>
+  </data>
+  <data name="NewMovies" xml:space="preserve">
+    <value>Нові фільми</value>
+    <comment>New movies in SearchMoviePage</comment>
+  </data>
+  <data name="MoviesNotFound" xml:space="preserve">
+    <value>Фільмів не знайдено</value>
+    <comment>Movies Not Found in SearchMoviePage</comment>
+  </data>
+  <data name="MoviesFound" xml:space="preserve">
+    <value>Зайдено фільмів</value>
+    <comment>Movies Found in SearchMoviePage</comment>
+  </data>
+  <data name="ChooseCriterias" xml:space="preserve">
+    <value>Критерії</value>
+    <comment>Choose Criterias in RecommendationPage</comment>
+  </data>
+  <data name="VoteMoviesBeforeRecommendations" xml:space="preserve">
+    <value>Для отримання рекомендацій необхідно повністю оцінити принаймні 10 фільмів. Ви можете шукати фільми самостійно, або система може запропонувати вам випадковий фільм для оцінювання</value>
+    <comment>Vote Movies Before Recommendations in RecommendationPage</comment>
+  </data>
+  <data name="VoteRandomMovie" xml:space="preserve">
+    <value>Оцінити випадковий</value>
+    <comment>Vote Random Movie in RecommendationPage</comment>
+  </data>
+  <data name="LogInForRecommendations" xml:space="preserve">
+    <value>Для отримання рекомендацій необхідна авторизація</value>
+    <comment>LogIn For Recommendations in RecommendationPage</comment>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Наступний</value>
+    <comment>Next in MoviePage</comment>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Пропустити</value>
+    <comment>Skip in MoviePage</comment>
+  </data>
+  <data name="StopVoting" xml:space="preserve">
+    <value>Завершити</value>
+    <comment>Stop Voting in MoviePage</comment>
+  </data>
+  <data name="Voted" xml:space="preserve">
+    <value>Оцінено</value>
+    <comment>Voted in MoviePage</comment>
+  </data>
+  <data name="VotingFinished" xml:space="preserve">
+    <value>Ви оцінили мінімально необхідну кількість фільмів. Тепер ви можете перейти до отримання рекомендацій</value>
+    <comment>Voting Finished in MoviePage</comment>
+  </data>
+  <data name="VotingNotFinished" xml:space="preserve">
+    <value>Ви ще не оцінили мінімально необхідну кількість фільмів</value>
+    <comment>Voting Not Finished in MoviePage</comment>
+  </data>
+  <data name="ContinueVoting" xml:space="preserve">
+    <value>До опитування</value>
+    <comment>Continue Voting in MoviePage</comment>
+  </data>
+  <data name="LogInForVoting" xml:space="preserve">
+    <value>Для виставлення оцінок необхідна авторизація</value>
+    <comment>Log In For Voting in MoviePage</comment>
+  </data>
+  <data name="LogInForAddingToFavorites" xml:space="preserve">
+    <value>Для додавання в обране необхідна авторизація</value>
+    <comment>LogIn For Adding To Favorites in MoviePage</comment>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Рік</value>
+    <comment>Year in MoviePage</comment>
+  </data>
+  <data name="Director" xml:space="preserve">
+    <value>Режисер</value>
+    <comment>Director in MoviePage</comment>
+  </data>
+  <data name="Genres" xml:space="preserve">
+    <value>Жанри</value>
+    <comment>Genres in MoviePage</comment>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Тривалість</value>
+    <comment>Duration in MoviePage</comment>
+  </data>
+  <data name="Actors" xml:space="preserve">
+    <value>У головних ролях</value>
+    <comment>Actors in MoviePage</comment>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Опис</value>
+    <comment>Description in MoviePage</comment>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Основні</value>
+    <comment>Main in MoviePage</comment>
+  </data>
+  <data name="Emotions" xml:space="preserve">
+    <value>Емоційні</value>
+    <comment>Emotions in MoviePage</comment>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Коментарі</value>
+    <comment>Comments in MoviePage</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Мова</value>
+    <comment>Language in AuthenticationPage</comment>
+  </data>
+  <data name="FavoritesCount" xml:space="preserve">
+    <value>Обрані фільми</value>
+    <comment>FavoritesCount in FavoriteMoviesPage</comment>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Перевірте ваше підключення до інтернету</value>
+    <comment>NoInternet in DataService</comment>
+  </data>
+  <data name="InvalidServerAnswer" xml:space="preserve">
+    <value>Некоректна відповідь сервера</value>
+    <comment>InvalidServerAnswer in DataService</comment>
+  </data>
+</root>

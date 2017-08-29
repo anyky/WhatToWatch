@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WhatToWatch.App" Collapsed="true">
+    <Position X="2" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACBAAAAgAEAAABAAAAAAAAAAAAAABABAAAAA=</HashCode>
+      <FileName>App.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.AppResources" Collapsed="true">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gkABSFiEDCijmQFAGgIBMBIYASBCAJAGKAAApAAAMIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Handlers.ExceptionHandler" Collapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\ExceptionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Model.Commentary" Collapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAABAAAAAAAAAgAAAACAAAIAA=</HashCode>
+      <FileName>Model\Commentary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Model.Criteria" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Criteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Model.Mark" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAQAAAAQAAAQAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Mark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Model.Movie" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <AssociationLine Name="marks" Type="WhatToWatch.Model.Mark" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="5.5" />
+        <Point X="10.25" Y="4.562" />
+        <Point X="8.5" Y="4.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="comments" Type="WhatToWatch.Model.Commentary" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="5.812" />
+        <Point X="14.125" Y="5.812" />
+        <Point X="14.125" Y="5.812" />
+        <Point X="18.75" Y="5.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.174" Y="-0.346" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gBAgABAMBEgqgABACAIAQBQARQAARAAIAAgAAgABAAQ=</HashCode>
+      <FileName>Model\Movie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="marks" />
+      <Field Name="comments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WhatToWatch.MyEventArgs.ChangeMarkEventArgs" Collapsed="true">
+    <Position X="2" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>MyEventArgs\ChangeMarkEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Pages.AuthenticationPage" Collapsed="true">
+    <Position X="8" Y="8.75" Width="1.75" />
+    <AssociationLine Name="loginPage" Type="WhatToWatch.Pages.LogInPage" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="9.441" />
+        <Point X="8.875" Y="10.266" />
+        <Point X="13" Y="10.266" />
+        <Point X="13" Y="9.441" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.062" Y="0.204" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="signupPage" Type="WhatToWatch.Pages.SignUpPage">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.331" Y="-0.582" Height="0.182" Width="1.089" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="langPage" Type="WhatToWatch.Pages.LanguagesPage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.438" Y="9.441" />
+        <Point X="8.438" Y="10.707" />
+        <Point X="15" Y="10.707" />
+        <Point X="15" Y="9.441" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.081" Y="0.293" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAGECAQAAAAAEAAAAAAQAAAAAACAAgACAAAAA=</HashCode>
+      <FileName>Pages\AuthenticationPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="loginPage" />
+      <Field Name="signupPage" />
+      <Field Name="langPage" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Pages.CommentsPage" Collapsed="true">
+    <Position X="18.75" Y="8.75" Width="1.5" />
+    <InheritanceLine Type="Xamarin.Forms.ContentPage" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="7.941" />
+        <Point X="11" Y="8.375" />
+        <Point X="16.292" Y="8.375" Type="JumpStart" />
+        <Point X="16.458" Y="8.375" Type="JumpEnd" />
+        <Point X="17.542" Y="8.375" Type="JumpStart" />
+        <Point X="17.708" Y="8.375" Type="JumpEnd" />
+        <Point X="19.125" Y="8.375" />
+        <Point X="19.125" Y="8.75" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="commentsList" Type="WhatToWatch.Views.ListViews.CommentListView" FixedFromPoint="true">
+      <Path>
+        <Point X="19.5" Y="8.75" />
+        <Point X="19.5" Y="7.691" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.088" Y="0.252" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="commentEditor" Type="WhatToWatch.Views.ExpandableEditor" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="9.441" />
+        <Point X="19.5" Y="10.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.232" Y="0.405" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAEEAAAACAAACAAAAAAAQAEAAAggAAAAAA=</HashCode>
+      <FileName>Pages\CommentsPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="commentsList" />
+      <Field Name="commentEditor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Pages.CriteriasMenuPage" Collapsed="true">
+    <Position X="5.75" Y="8.75" Width="1.75" />
+    <AssociationLine Name="criteriaViews" Type="WhatToWatch.Views.Cells.CriteriaView">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.081" Y="0.175" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAgAAAAACAQAAAAA=</HashCode>
+      <FileName>Pages\CriteriasMenuPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="criteriaViews" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Pages.FavoriteMoviesPage" Collapsed="true">
+    <Position X="3.5" Y="8.75" Width="1.75" />
+    <AssociationLine Name="listView" Type="WhatToWatch.Views.ListViews.FavoriteMovieListView">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.158" Y="0.089" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="movies" Type="WhatToWatch.Model.Movie" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.646" Y="8.75" />
+        <Point X="3.646" Y="5.937" />
+        <Point X="10" Y="5.937" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.108" Y="-0.318" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAgAAAEAABAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Pages\FavoriteMoviesPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listView" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="movies" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Pages.LogInPage" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAECAABAAAAAAAAAAAAAACAEAgAAEAAAAAAAAA=</HashCode>
+      <FileName>Pages\LogInPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Pages.MainTabbedPage" Collapsed="true">
+    <Position X="7.25" Y="6.75" Width="1.5" />
+    <AssociationLine Name="searchPage" Type="WhatToWatch.Pages.SearchMoviePage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="6.938" />
+        <Point X="3.729" Y="6.938" Type="JumpStart" />
+        <Point X="3.563" Y="6.938" Type="JumpEnd" />
+        <Point X="2.062" Y="6.938" />
+        <Point X="2.062" Y="8.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.018" Y="0.643" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="recommendPage" Type="WhatToWatch.Pages.RecommendationPage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="6.938" />
+        <Point X="16.375" Y="6.938" />
+        <Point X="16.375" Y="8.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.513" Y="1.89" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="favoritePage" Type="WhatToWatch.Pages.FavoriteMoviesPage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="7.125" />
+        <Point X="4.886" Y="7.125" />
+        <Point X="4.886" Y="8.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.069" Y="0.779" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="authenticationPage" Type="WhatToWatch.Pages.AuthenticationPage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="7.125" />
+        <Point X="9.5" Y="7.125" />
+        <Point X="9.5" Y="8.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.092" Y="0.973" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACCAAAAAAAAAAADAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Pages\MainTabbedPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="searchPage" />
+      <Field Name="recommendPage" />
+      <Field Name="favoritePage" />
+      <Field Name="authenticationPage" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Pages.MoviePage" Collapsed="true">
+    <Position X="20.75" Y="8.75" Width="1.5" />
+    <AssociationLine Name="movie" Type="WhatToWatch.Model.Movie" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.75" Y="8.75" />
+        <Point X="21.75" Y="5.625" />
+        <Point X="11.5" Y="5.625" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.372" Y="0.079" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAAgAAEAAAABAAEAAAAAAUgAAAAAIQAAAAAAA=</HashCode>
+      <FileName>Pages\MoviePage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Pages.RecommendationPage" Collapsed="true">
+    <Position X="16.25" Y="8.75" Width="2" />
+    <AssociationLine Name="movies" Type="WhatToWatch.Model.Movie" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.625" Y="8.75" />
+        <Point X="17.625" Y="5.938" />
+        <Point X="11.5" Y="5.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.157" Y="-0.303" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="listView" Type="WhatToWatch.Views.ListViews.MovieListView" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="9.441" />
+        <Point X="17.25" Y="11.125" />
+        <Point X="4.458" Y="11.125" Type="JumpStart" />
+        <Point X="4.292" Y="11.125" Type="JumpEnd" />
+        <Point X="2" Y="11.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.275" Y="0.133" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAABEAAAAAAAAAAgAAAACAAYAAAAA=</HashCode>
+      <FileName>Pages\RecommendationPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listView" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="movies" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Pages.SearchMoviePage" Collapsed="true">
+    <Position X="1.25" Y="8.75" Width="1.5" />
+    <InheritanceLine Type="Xamarin.Forms.ContentPage" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="7.941" />
+        <Point X="11" Y="8.375" />
+        <Point X="9.583" Y="8.375" Type="JumpStart" />
+        <Point X="9.417" Y="8.375" Type="JumpEnd" />
+        <Point X="4.969" Y="8.375" Type="JumpStart" />
+        <Point X="4.803" Y="8.375" Type="JumpEnd" />
+        <Point X="3.729" Y="8.375" Type="JumpStart" />
+        <Point X="3.563" Y="8.375" Type="JumpEnd" />
+        <Point X="2.438" Y="8.375" />
+        <Point X="2.438" Y="8.75" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="listView" Type="WhatToWatch.Views.ListViews.MovieListView" FixedToPoint="true">
+      <Path>
+        <Point X="1.5" Y="9.441" />
+        <Point X="1.5" Y="10.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.793" Y="0.439" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="movies" Type="WhatToWatch.Model.Movie" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.375" Y="8.75" />
+        <Point X="1.375" Y="5.812" />
+        <Point X="10" Y="5.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.256" Y="0.002" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAgAAAEAABAAAAAAAAAQAAAAAAABAIAAAAA=</HashCode>
+      <FileName>Pages\SearchMoviePage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listView" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="movies" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Pages.SignUpPage" Collapsed="true">
+    <Position X="10.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAEAAAAAACAEAgAAEAAAAAAACA=</HashCode>
+      <FileName>Pages\SignUpPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WhatToWatch.Repository.AccountRepository" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAIQAAAAAAAAAAARAAAQAAAAAAAAgAAAAAAAAAAQA=</HashCode>
+      <FileName>Repository\AccountRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Repository.MovieRepository" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <AssociationLine Name="movies" Type="WhatToWatch.Model.Movie" FixedFromPoint="true">
+      <Path>
+        <Point X="11.188" Y="3.062" />
+        <Point X="11.188" Y="5.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.762" Y="0.228" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="theMovie" Type="WhatToWatch.Model.Movie" FixedFromPoint="true">
+      <Path>
+        <Point X="10.938" Y="3.062" />
+        <Point X="10.938" Y="5.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.084" Y="1.083" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AhEAAVMIQAJhEACCAjIAEAgAEBCAcAgJMBgBlAAAAAQ=</HashCode>
+      <FileName>Repository\MovieRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="theMovie" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="movies" />
+      <Field Name="criterias" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Service.DataService" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBEAIUIIQCIBEAAAAzAAEQgAEBAgUAgoQBgQMAAAAAQ=</HashCode>
+      <FileName>Service\DataService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movieRepository" />
+      <Field Name="accountRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Views.Cells.CommentCell" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAEAMAAAAAAAIBAAOAAAhAAgUAAACEgAIAA=</HashCode>
+      <FileName>Views\Cells\CommentCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="image" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Views.Cells.FavoriteMovieCell" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAEAAEAAAAAAAAAAAAAAIACAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Views\Cells\FavoriteMovieCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movieFavImage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Views.Cells.MovieCell" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <AssociationLine Name="image" Type="WhatToWatch.Views.ImageViews.PosterImageView">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.062" Y="0.271" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAIEAQAAgAAAAAAAAAAAOQAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Cells\MovieCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="image" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Views.Cells.CriteriaView" Collapsed="true">
+    <Position X="5.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CriteriaView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ExpandableEditor" Collapsed="true">
+    <Position X="18.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ExpandableEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.RatingView" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAACAEAAAAAAAACAAAAgAA=</HashCode>
+      <FileName>Views\RatingView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mark" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="reelImages" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Views.Images.ReelImage" Collapsed="true">
+    <Position X="1" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Views\Images\ReelImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ImageViews.BaseImageView" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQgAABAAAAAAAAAAAEAAAAgBBAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ImageViews\BaseImageView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ImageViews.ComplaintImageView" Collapsed="true">
+    <Position X="17.25" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Views\ImageViews\ComplaintImageView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ImageViews.FavoriteImageView" Collapsed="true">
+    <Position X="12.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ImageViews\FavoriteImageView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ImageViews.PosterImageView" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ImageViews\PosterImageView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ListViews.CommentListView" Collapsed="true">
+    <Position X="18.75" Y="7" Width="1.5" />
+    <AssociationLine Name="comments" Type="WhatToWatch.Model.Commentary">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.337" Y="0.144" Height="0.182" Width="1.041" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ListViews\CommentListView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="comments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WhatToWatch.Views.ListViews.FavoriteMovieListView" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="2" />
+    <InheritanceLine Type="WhatToWatch.Views.ListViews.MovieListView" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="11.441" />
+        <Point X="1.25" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ListViews\FavoriteMovieListView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WhatToWatch.Views.ListViews.MovieListView" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <AssociationLine Name="movies" Type="WhatToWatch.Model.Movie">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.211" Y="0.088" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ListViews\MovieListView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="movies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Xamarin.Forms.ContentPage" Collapsed="true">
+    <Position X="10.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="WhatToWatch.Pages.LanguagesPage" Collapsed="true">
+    <Position X="14.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\LanguagesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
